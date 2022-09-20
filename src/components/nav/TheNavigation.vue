@@ -2,27 +2,14 @@
   <header>
     <nav>
       <ul>
+        <li><router-link to="/teams">Teams</router-link></li>
         <li>
-          <button @click="setActivePage('teams-list')">Teams</button>
-        </li>
-        <li>
-          <button @click="setActivePage('users-list')">Users</button>
+          <router-link to="users">Users</router-link>
         </li>
       </ul>
     </nav>
   </header>
 </template>
-
-<script>
-export default {
-  emits: ['set-page'],
-  methods: {
-    setActivePage(page) {
-      this.$emit('set-page', page);
-    },
-  },
-};
-</script>
 
 <style scoped>
 header {
