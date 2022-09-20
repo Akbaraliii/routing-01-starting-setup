@@ -1,4 +1,5 @@
 <template>
+  <button @click="goUser">ToUsersPage</button>
   <ul>
     <teams-item
       v-for="team in teams"
@@ -17,6 +18,12 @@ export default {
     TeamsItem,
   },
   inject: ['teams'],
+  methods: {
+    // do something
+    goUser() {
+      this.$router.push('./users');
+    },
+  },
 };
 </script>
 
