@@ -23,7 +23,7 @@ export default {
   methods: {
     // do something
     goUser() {
-      this.$router.push('./users');
+      this.$router.push('/users');
     },
   },
 };
